@@ -7,11 +7,11 @@
 </head>
 <body>
     <h1>Multiplication Table</h1>
-    <p id="p"></p>
+    <div id="list"></div>
 </body>
 <script>
     for (let index = 1; index < 13; index++) {
-        document.getElementById('p').innerHTML += `<p>${index}. 2 * ${index} = ${(index*2)}</p>`
+        document.getElementById('list').innerHTML += `<p>${index}. 2 * ${index} = ${(index*2)}</p>`
         
     }
 </script>
