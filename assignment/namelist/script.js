@@ -1,14 +1,16 @@
 let studentList = [];
 const listElement = document.getElementById('list');
 const nameTag = document.getElementById('name');
+const listed = document.getElementById('listed');
 
 function add() {
     let name2 = nameTag.value;
 
     if (studentList.includes(name2)) {
-        console.log('Already Listed');
+        listed.innerText = '* Already Listed';
     }
     else{
+        listed.innerText = '';
         studentList.push(name2);
         loop()
     }
