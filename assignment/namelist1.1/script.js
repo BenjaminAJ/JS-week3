@@ -2,12 +2,13 @@ const table = document.getElementById('tbody');
 const studentname = document.getElementById('name');
 const studentPhoneNumber = document.getElementById('pNumber');
 let studentArray = [];
-let studentInfo = {
-    name: "ben",
-    phoneNumber : '07010129246',
-};
 
 function add() {
+    let studentInfo = {
+        name: "ben",
+        phoneNumber : '07010129246',
+    };
+    
     studentInfo.name = studentname.value
     studentInfo.phoneNumber = studentPhoneNumber.value
 
