@@ -10,9 +10,12 @@ function generateTimesTable() {
         lists.innerHTML= '';
     }
     for (+from; +from <= +to; +from++) {
+        const div = document.createElement('div')
+        div.id = +from + 'div'
+        lists.appendChild(div)
         for (let index = 1; index < 13; index++) {
-            lists.innerHTML+= `<p> ${+from} * ${index} = ${+from * index}</p>`;
+            div.innerHTML+= `<p> ${+from} * ${index} = ${+from * index}</p>`;
         }
-        lists.innerHTML+= `<hr><br>`;
+        // lists.innerHTML+= `<hr><br>`;
     }
 }
